@@ -1,0 +1,20 @@
+# src/DrupalCon/FirstBundle/Resources/config/routing.yml
+hello:
+    path:     /hello/{name}
+    defaults: { _controller: FirstBundle:Hello:index }
+
+#@FirstBundle > FirstBundle:Default:hello
+#DrupalCon\FirstBundle\Controller\DefaultController::Hello
+
+product:
+    path:     /product/{id}.json
+    defaults: { _controller: FirstBundle:Product:showJson }
+
+    path:     /product
+    defaults: { _controller: FirstBundle:Product:create }
+
+product/details:
+    path:     /product/details/{id}
+    defaults: { _controller: FirstBundle:Product:showDetails }
+
+

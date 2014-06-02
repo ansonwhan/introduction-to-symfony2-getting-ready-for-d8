@@ -67,3 +67,10 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+
+#services
+services:
+    my.product_serializer:
+        class: DrupalCon\FirstBundle\Service\Product_Serializer
+        arguments: []

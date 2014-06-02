@@ -1,0 +1,13 @@
+{# src/DrupalCon/FirstBundle/Resources/views/Hello/index.html.twig #}
+ {% extends '::base.html.twig' %}
+
+ {% block body %}
+     <h1>Hello {{ name }}!</h1>
+     <p>The template loaded.</p>
+ {% endblock %}
+
+ {% block javascripts %}
+     <script>
+     console.log('welcome');
+     </script>
+ {% endblock %}
